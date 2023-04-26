@@ -1,0 +1,27 @@
+@page "/Kontakt"
+<MudContainer MaxWidth="MaxWidth.Medium">
+    <MudGrid>
+        <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6">
+            <MudText Align="Align.Center" Class="fw-bold mt-5" Typo="Typo.h4">Kontakt</MudText>
+            <MudText Align="Align.Center" Typo="Typo.body2">Moritz.Waldau@mw-software-solutions.de</MudText>
+            <MudText Align="Align.Center" Typo="Typo.body2"></MudText>
+        </MudItem>
+        <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6">
+            <MudGrid>
+                <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6">
+                    <MudTextField Class="mt-5" T="string" Variant="Variant.Text" Label="Firstname"></MudTextField>
+                </MudItem>
+                <MudItem xs="6" sm="6" md="6" lg="6" xl="6" xxl="6">
+                    <MudTextField Class="mt-5" T="string" Variant="Variant.Text" Label="Lastname"></MudTextField>
+                </MudItem>
+            </MudGrid>
+            <MudTextField Class="mt-5" T="string" Variant="Variant.Text" Label="Email"></MudTextField>
+            <MudTextField Class="mt-5" T="string" Variant="Variant.Text" Label="Subject"></MudTextField>
+            
+            <MudTextField Class="mt-5" T="string" Label="Message" Variant="Variant.Outlined" Lines="3" />
+            <MudContainer Class="d-flex justify-content-center align-items-center mt-5">
+                <MudButton Size="Size.Medium" ButtonType="ButtonType.Button" Variant="Variant.Filled">Absenden</MudButton>
+            </MudContainer>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
