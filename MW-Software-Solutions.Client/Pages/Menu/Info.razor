@@ -1,0 +1,30 @@
+@page "/Info"
+@using MW_Software_Solutions.Client.Shared.Components
+
+<MudGrid Class="mb-10">
+    <MudItem xs="12" sm="12" md="12" lg="12" xl="12" xxl="12" Class="d-flex justify-content-center align-content-center">
+        <MudAvatar Style="width: 150px; height: 150px;">
+            <MudImage Fluid="true" Src="/pictures/OriginalonTransparent.png"/>
+        </MudAvatar>
+    </MudItem>
+</MudGrid>
+
+<MudText Align="Align.Center" Typo="Typo.body1">
+    Hallo, Mein Name ist Moritz Waldau aus Niedersachsen, Deutschland. <br/>
+    Ich bin ein C# Backend-Developer. <br/>
+    Aktuell studiere ich noch Wirtschaftsinformatik im 4. Semester. <br/>
+</MudText>
+
+<MudGrid Justify="Justify.Center" Class=" mt-10 mb-15">
+    <MudItem>
+        <SkillCard Title="Blazor Framework" SourcePath="./pictures/Blazor.png"/>
+    </MudItem>
+    
+    <MudItem>
+        <SkillCard Title="C#" SourcePath="./pictures/Blazor.png"/>
+    </MudItem>
+    
+    <MudItem>
+        <SkillCard Title="SQL-Server" SourcePath="./pictures/Blazor.png"/>
+    </MudItem>
+</MudGrid>

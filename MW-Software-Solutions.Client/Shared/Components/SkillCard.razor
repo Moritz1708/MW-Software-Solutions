@@ -1,0 +1,17 @@
+
+<MudCard Outlined="false" Elevation="20">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudText Class="fw-bold" Align="Align.Center" Typo="Typo.body2">
+                @Title
+            </MudText>
+        </CardHeaderContent>
+    </MudCardHeader>
+</MudCard>
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+    [Parameter]
+    public string? SourcePath { get; set; }
+}
