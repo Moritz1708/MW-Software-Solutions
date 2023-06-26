@@ -1,5 +1,38 @@
 ﻿@page "/"
 @using MW_Software_Solutions.Client.Shared.Components
 
-<HomeText/>
+<MudContainer Class="">
+    <MudHidden Breakpoint="Breakpoint.Xs" Invert="true">
+        <MudTextField class="rounded mb-8" @bind-Value="@_value" Placeholder="Search" 
+                      Variant="Variant.Outlined" AutoFocus="false" 
+                      Adornment="Adornment.Start" AdornmentColor="Color.Dark" 
+                      AdornmentIcon="@Icons.Material.Filled.Search"/>
+        
+        <MudContainer MaxWidth="MaxWidth.ExtraSmall">
+            <MudCarousel Class="mud-width-full" Style="height:250px; border-spacing: 20px" ShowArrows="true" ShowBullets="false" EnableSwipeGesture="true" AutoCycle="false" TData="object">
+                <MudCarouselItem Transition="transition" Color="@Color.Primary" Style="border-radius: 25px">
+                    <div class="d-flex" style="height:100%;">
+                        <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+                    </div>
+                </MudCarouselItem>
+                <MudCarouselItem Transition="transition" Color="@Color.Secondary" Style="border-radius: 25px">
+                    <div class="d-flex" style="height:100%">
+                        <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+                    </div>
+                </MudCarouselItem>
+                <MudCarouselItem Transition="transition" Color="Color.Success" Style="border-radius: 25px">
+                    <div class="d-flex" style="height:100%">
+                        <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" />
+                    </div>
+                </MudCarouselItem>
+            </MudCarousel>
+        </MudContainer>
+    </MudHidden>
+    
+    <MudHidden Breakpoint="Breakpoint.SmAndUp" Invert="true">
+        <HomeText></HomeText>
+    </MudHidden>
+</MudContainer>
+
+
 
